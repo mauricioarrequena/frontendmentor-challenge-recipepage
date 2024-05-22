@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+.outer-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "alias-content";
+}
+
+.header {
+  grid-area: alias-header;
+}
+
+.content {
+  grid-area: alias-content;
+}
+
+.card-main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-container {
+  display: flex;
+}
+
+.card-content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  padding-top: 2rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.8rem;
+}
+
+.intro-title {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.preparation-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+}
+.preparation-title {
+  margin-bottom: 0.8rem;
+}
+
+.preparation-list {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.preparation-list li {
+  margin-bottom: 0.52rem;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.3rem;
+}
+
+.ingredients-title {
+  font-size: 1.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.ingredients-list {
+  margin-left: 1.5rem;
+}
+.ingredients-list li {
+  margin-bottom: 0.5rem;
+}
+
+.instructions-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.3rem;
+}
+
+.instructions-title {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.instructions-list {
+  margin-left: 1.3rem;
+}
+
+.instructions-list li {
+  margin-bottom: 0.85em;
+}
+
+.nutrition-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-title {
+  margin-bottom: 0.8rem;
+}
+
+.nutrition-info {
+  margin-bottom: 0.8rem;
+}
+
+.nutrition-list-contaier {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutrition-item-container {
+  display: flex;
+  /* margin-bottom: 0.2rem; */
+}
+
+.nutrition-item-name {
+  flex-basis: 50%;
+  margin-left: 2rem;
+}
+
+.nutrition-item-value {
+  flex-basis: 50%;
+}
+
+.footer {
+  grid-area: alias-footer;
+}
+
+@media (min-width: 576px) {
+  .outer-grid {
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 1fr 720px 1fr;
+    grid-template-areas:
+      "alias-header   alias-header    alias-header"
+      ".               alias-content   ."
+      "alias-footer   alias-footer    alias-footer";
+  }
+
+  .card-main-container {
+    padding: 2rem;
+  }
+
+  .card-content-container {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .card-main-container {
+    border-radius: 20px;
+  }
+
+  .card-image-container {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+}
+
+/* 
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+} */
+
+/* .young-serif-regular {
+  font-family: "Young Serif", serif;
+} */
+
+body {
+  background-color: #f3e6d8;
+}
+
+.outer-grid {
+}
+
+.content {
+}
+
+.card-main-container {
+  background-color: #ffffff;
+}
+
+.card-image-container {
+}
+
+.card-content-container {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  color: #302d2c;
+  font-weight: 370;
+}
+
+.intro-container {
+}
+
+.title {
+  font-family: "Young Serif", serif;
+}
+
+.intro-title {
+  /* font-family: "Outfit", sans-serif; */
+}
+
+.intro-content {
+  font-size: 1.06rem;
+  color: #302d2c;
+  font-weight: 370;
+}
+
+.preparation-container {
+  background-color: #fff5fa;
+  border-radius: 10px;
+}
+
+.preparation-title {
+  font-family: "Outfit", sans-serif;
+  color: #7b284f;
+}
+
+.preparation-list {
+}
+
+.preparation-bold {
+  font-weight: 600;
+}
+
+.ingredients-container {
+}
+
+.ingredients-title {
+  color: #854632;
+  font-weight: 590;
+}
+
+.instructions-container {
+}
+
+.instructions-title {
+  color: #854632;
+  font-weight: 590;
+}
+
+.instructions-bold {
+  font-weight: 700;
+}
+
+.nutrition-container {
+}
+
+.nutrition-title {
+  color: #854632;
+  font-weight: 590;
+}
+
+.nutrition-list-contaier {
+}
+
+.nutrition-item-container {
+}
+
+.nutrition-item-name {
+}
+.nutrition-item-value {
+  color: #854632;
+  font-weight: 590;
+}
