@@ -75,6 +75,7 @@ picture {
 .ingredients-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2.5rem;
   margin-bottom: 2.3rem;
 }
 
@@ -86,13 +87,19 @@ picture {
 .ingredients-list {
   margin-left: 1.5rem;
 }
+
 .ingredients-list li {
   margin-bottom: 0.5rem;
+}
+
+.ingredients-list li:last-child {
+  margin-bottom: 0;
 }
 
 .instructions-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
   margin-bottom: 2.3rem;
 }
 
@@ -109,17 +116,22 @@ picture {
   margin-bottom: 0.85em;
 }
 
+.instructions-list li:last-child {
+  margin-bottom: 0;
+}
+
+
 .nutrition-container {
   display: flex;
   flex-direction: column;
 }
 
 .nutrition-title {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 .nutrition-info {
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .nutrition-list-contaier {
@@ -129,7 +141,8 @@ picture {
 
 .nutrition-item-container {
   display: flex;
-  /* margin-bottom: 0.2rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.6rem;
 }
 
 .nutrition-item-name {
@@ -172,7 +185,6 @@ picture {
     border-radius: 20px;
     overflow: hidden;
   }
-
 }
 
 /* 
@@ -243,6 +255,9 @@ body {
 }
 
 .ingredients-container {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e4ded8;
 }
 
 .ingredients-title {
@@ -251,11 +266,20 @@ body {
 }
 
 .instructions-container {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e4ded8;
 }
 
 .instructions-title {
   color: #854632;
   font-weight: 590;
+}
+
+.instructions-list {
+}
+
+.instructions-list li {
 }
 
 .instructions-bold {
@@ -274,6 +298,9 @@ body {
 }
 
 .nutrition-item-container {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e4ded8;
 }
 
 .nutrition-item-name {
